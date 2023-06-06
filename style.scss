@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+@import "var";
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Otomanopee One', sans-serif;
+}
+html
+{
+    font-size: 62.5%;
+}
+body::-webkit-scrollbar{
+	width: 15px;
+}
+body::-webkit-scrollbar-track{
+	background: $tg;
+	border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb{
+	background: white;
+	border-radius: 4px;
+}
+body::-webkit-scrollbar-corner{
+	background: #353b48;
+}
+body
+{
+    background: linear-gradient(to bottom left, rgba(0,0,0, 0.3),rgba(0,0,0, 0.3)), url(img/rammandir.jpg) no-repeat;
+    background-size: 102% 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+header
+{
+   width: 100%;
+   height: 15vh;
+   background-color: rgba(0,0,0, 0.2);
+   position: sticky;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   h1
+   {
+       color: $tw;
+       z-index: 1;
+       font-size: 2.5rem;
+       margin-left: 9rem;
+       animation: hbeat 1s linear infinite;
+   }
+
+
+   nav
+   {
+       color: $tw;
+   }
+   a
+   {
+       margin-right: 5rem;
+       font-size: 1.5rem;
+       &:first-child
+       {
+            color: $tg;
+       } 
+   }
+}
+main 
+{
+    position: relative;
+    width: 100%;
+    height: 100vh - 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    section
+    {
+        color: $tw;
+        text-align: center;
+        h2{
+            font-size: 2.5rem;
+            letter-spacing: .2rem;
+            margin-bottom: 1rem;
+        text-shadow: 2px 2px 2px #000;
+        }
+        h1{
+            font-size: 3.5rem;
+            letter-spacing: .3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 2px #000;
+        }
+        h3{
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+            margin-bottom: 1rem;
+        text-shadow: 2px 2px 2px #000;
+        }
+        .btn1
+        {
+            background-color: #fff;
+            color: rgb(24, 22, 22);
+            text-decoration: none;
+            padding: .6rem 1.5rem;
+            text-transform: uppercase;
+            word-spacing: .3rem;
+            transition: all 0.5s ease-out;
+            &:hover
+            {
+                background-color: $tg;
+                color: rgb(24, 22, 22);
+            }
+        }
+        .btn2
+        {
+            background-color: $tg;
+            color: rgb(24, 22, 22);
+            text-decoration: none;
+            padding: .6rem 2rem;
+            text-transform: uppercase;
+            word-spacing: .3rem;
+            transition: all 0.3s ease-out;
+            &:hover
+            {
+                background-color: #fff;
+                color: rgb(24, 22, 22);
+            }
+        }
+    }
+}
+.change::after
+{
+ content: '';
+ animation: change 8s linear  infinite;
+ color: $tg;
+}
+article
+{
+    position: absolute;
+    margin-top: 89%;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(155deg, $tg 50%, #fff 0%);
+}
+.h
+{
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+
+}
+
+.contact
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(334deg, $tg 50%, #fff 0%);
+}
+.heading
+{
+    color: $tg;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-left: 5%;
+}
+.c-form
+{
+    width: 30rem;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    input
+    {
+        margin-bottom: 2rem;
+        width: 35rem;
+        height: 3rem;
+    }
+    .submit
+   {
+       width: 8rem;
+       height: 3rem;
+       margin-left: 10%;
+       background: transparent;
+       border: 5px solid #fff;
+       border-radius: 3rem;
+       font-size: 1.5rem;
+       color: #fff;
+       line-height: .1rem;
+   } 
+}
+footer
+{
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: -15%;
+    background-color: $tg;
+    border-top: 5px solid #fff;
+    text-align: center;
+    p{
+        margin-top: 2.5%;
+        color: #fff;
+        font-size: 2rem;
+        text-transform: capitalize;
+        letter-spacing: .2rem;
+    }
+}
+@keyframes change {
+    0%
+    {
+        content: 'DELHI';
+    }
+    20%
+    {
+        content: 'MUMBAI';
+    }
+    40%
+    {
+        content: 'RAM MANDIR';
+    }
+    60%
+    {
+        content: 'JAIPUR';
+    }
+    80%
+    {
+        content: 'KASHMIR';
+    }
+    100%
+    {
+        content: 'CAHNDIGARH';
+    }
+}
+@keyframes hbeat
+{
+    0%
+    {
+        transform:  scale(1);
+    }
+    20%
+    {
+        transform:   scale(1);
+    }
+    40%
+    {
+        transform:  scale(1.4);
+    }
+    60%
+    {
+        transform: scale(1.2);
+    }
+    80%
+    {
+        transform:  scale(1.4);
+    }
+    100%
+    {
+        transform:  scale(1);
+    }
+}

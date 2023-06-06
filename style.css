@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #00e2b5;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-corner {
+  background: #353b48;
+}
+
+body {
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(img/rammandir.jpg) no-repeat;
+  background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/rammandir.jpg) no-repeat;
+  background-size: 102% 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  color: #eee;
+  z-index: 1;
+  font-size: 2.5rem;
+  margin-left: 9rem;
+  -webkit-animation: hbeat 1s linear infinite;
+          animation: hbeat 1s linear infinite;
+}
+
+header nav {
+  color: #eee;
+}
+
+header a {
+  margin-right: 5rem;
+  font-size: 1.5rem;
+}
+
+header a:first-child {
+  color: #00e2b5;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section {
+  color: #eee;
+  text-align: center;
+}
+
+main section h2 {
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 2px #000;
+}
+
+main section h1 {
+  font-size: 3.5rem;
+  letter-spacing: .3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 2px #000;
+}
+
+main section h3 {
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 2px #000;
+}
+
+main section .btn1 {
+  background-color: #fff;
+  color: #181616;
+  text-decoration: none;
+  padding: .6rem 1.5rem;
+  text-transform: uppercase;
+  word-spacing: .3rem;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+main section .btn1:hover {
+  background-color: #00e2b5;
+  color: #181616;
+}
+
+main section .btn2 {
+  background-color: #00e2b5;
+  color: #181616;
+  text-decoration: none;
+  padding: .6rem 2rem;
+  text-transform: uppercase;
+  word-spacing: .3rem;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+main section .btn2:hover {
+  background-color: #fff;
+  color: #181616;
+}
+
+.change::after {
+  content: '';
+  -webkit-animation: change 8s linear  infinite;
+          animation: change 8s linear  infinite;
+  color: #00e2b5;
+}
+
+article {
+  position: absolute;
+  margin-top: 89%;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: linear-gradient(155deg, #00e2b5 50%, #fff 0%);
+}
+
+.h {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: linear-gradient(334deg, #00e2b5 50%, #fff 0%);
+}
+
+.heading {
+  color: #00e2b5;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  margin-left: 5%;
+}
+
+.c-form {
+  width: 30rem;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.c-form input {
+  margin-bottom: 2rem;
+  width: 35rem;
+  height: 3rem;
+}
+
+.c-form .submit {
+  width: 8rem;
+  height: 3rem;
+  margin-left: 10%;
+  background: transparent;
+  border: 5px solid #fff;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: .1rem;
+}
+
+footer {
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  bottom: -15%;
+  background-color: #00e2b5;
+  border-top: 5px solid #fff;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 2.5%;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+}
+
+@-webkit-keyframes change {
+  0% {
+    content: 'DELHI';
+  }
+  20% {
+    content: 'MUMBAI';
+  }
+  40% {
+    content: 'RAM MANDIR';
+  }
+  60% {
+    content: 'JAIPUR';
+  }
+  80% {
+    content: 'KASHMIR';
+  }
+  100% {
+    content: 'CAHNDIGARH';
+  }
+}
+
+@keyframes change {
+  0% {
+    content: 'DELHI';
+  }
+  20% {
+    content: 'MUMBAI';
+  }
+  40% {
+    content: 'RAM MANDIR';
+  }
+  60% {
+    content: 'JAIPUR';
+  }
+  80% {
+    content: 'KASHMIR';
+  }
+  100% {
+    content: 'CAHNDIGARH';
+  }
+}
+
+@-webkit-keyframes hbeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  80% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes hbeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  80% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
